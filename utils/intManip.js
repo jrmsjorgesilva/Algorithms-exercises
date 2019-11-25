@@ -1,11 +1,13 @@
 const reverseInt = int => {
-  return parseInt(
-    int
-      .toString()
-      .split("")
-      .reverse()
-      .join(""),
-    10
+  return (
+    parseInt(
+      int
+        .toString()
+        .split("")
+        .reverse()
+        .join(""),
+      10
+    ) * Math.sign(int)
   );
 };
 
